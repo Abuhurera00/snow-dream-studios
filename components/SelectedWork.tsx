@@ -15,16 +15,16 @@ const SelectedWork = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
     return (
-        <section ref={targetRef} className="relative h-[250vh] bg-neutral-900">
-            <h3 className="text-[58px] px-5 py-12 text-white leading-none">Selected Work</h3>
-            <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-                <motion.div style={{ x }} className="flex gap-4">
-                    {cards.map((card) => {
-                        return <Card card={card} key={card.id} />;
-                    })}
-                </motion.div>
-            </div>
-        </section>
+            <section ref={targetRef} className="relative h-[250vh] container">
+                <h3 className="text-[58px] px-5 py-12 text-white leading-none">Selected Work</h3>
+                <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+                    <motion.div style={{ x }} className="flex gap-4">
+                        {cards.map((card) => {
+                            return <Card card={card} key={card.id} />;
+                        })}
+                    </motion.div>
+                </div>
+            </section>
     )
 };
 
