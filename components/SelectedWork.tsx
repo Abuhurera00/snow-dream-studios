@@ -56,7 +56,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
                         ))}
                     </div>
                     <div className="bg-white p-3">
-                        <ArrowUp size={20} className="text-black" />
+                        <ArrowUp size={20} className="text-black rotate-45" />
                     </div>
                 </div>
             </Link>
